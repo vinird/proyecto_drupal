@@ -1,0 +1,12 @@
+custom_itm_theme.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+custom_itm_theme.small:
+  label: small
+  mediaQuery: 'all and (min-width: 60px) and (max-width: 560px)'
+  weight: 2
+  multipliers:
+    - 1x

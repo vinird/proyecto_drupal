@@ -1,0 +1,14 @@
+two_column:
+  label: Two column (Custom ITM Theme)
+  category: Custom ITM Theme
+  template: template/
+  css: css/template.css
+  regions:
+    header:
+      label: Header
+    main:
+      label: Main Content
+    sidebar:
+      label: Sidebar
+    footer:
+      label: Footer

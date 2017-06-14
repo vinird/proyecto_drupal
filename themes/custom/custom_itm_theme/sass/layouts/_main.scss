@@ -1,0 +1,9 @@
+#panels-ipe-content{
+    display: flex;
+    .block-region-main{
+        flex: 1 0 70%;
+    }
+    .block-region-sidebar{
+        flex: 1 0 30%;
+    }
+}

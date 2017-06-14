@@ -1,0 +1,17 @@
+name: Custom ITM Theme
+type: theme
+description: Theme for the final project of "Programación en Drupal"
+package: Other
+core: 8.x
+libraries:
+  - custom_itm_theme/global-styling
+ 
+base theme: classy
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
+
