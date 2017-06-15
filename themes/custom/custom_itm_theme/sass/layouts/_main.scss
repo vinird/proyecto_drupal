@@ -1,9 +1,22 @@
-#panels-ipe-content{
-    display: flex;
+.main-custom-class{
+    @media screen and (min-width: $medium)  {
+        display: flex;
+    }
     .block-region-main{
-        flex: 1 0 70%;
+        @media screen and (max-width: $medium)  {
+            flex: 1 0 100%;
+        }
+        @media screen and (min-width: $medium)  {
+            
+        }
+
     }
     .block-region-sidebar{
-        flex: 1 0 30%;
+        @media screen and (max-width: $medium) {
+            flex: 1 0 100%;
+        }
+        @media screen and (min-width: $medium) {
+           
+        }
     }
 }
