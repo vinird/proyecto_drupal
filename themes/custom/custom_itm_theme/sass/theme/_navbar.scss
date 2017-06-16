@@ -1,8 +1,12 @@
 header{
     background-color: rgb(2, 105, 159);
-    color: white;
     a{
         color: white;
     }
-    margin-bottom: 60px;
+    li {
+        .is-active{
+            background-color: rgb(2, 156, 224);
+            color: white!important;
+        }
+    }
 }

@@ -436,6 +436,11 @@ template {
   display: inline-block;
 }
 
+.main-custom-class {
+  max-width: 1300px;
+  margin: auto;
+}
+
 @media screen and (min-width: 768px) {
   .main-custom-class {
     display: -webkit-box;
@@ -452,6 +457,14 @@ template {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .main-custom-class .block-region-main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 70%;
+            flex: 1 0 70%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-custom-class .block-region-sidebar {
     -webkit-box-flex: 1;
@@ -460,35 +473,21 @@ template {
   }
 }
 
-body {
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #02699f;
-  color: white;
-  margin-bottom: 60px;
-}
-
-header a {
-  color: white;
+@media screen and (min-width: 768px) {
+  .main-custom-class .block-region-sidebar {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+  }
 }
 
 .block-region-main .view-content ul li {
-  background-color: white;
   list-style-type: none;
   box-sizing: border-box;
   padding: 25px;
-  border-top: 15px solid #025279;
   margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
-}
-
-.block-region-sidebar .block-tagadelic {
-  background-color: white;
-  padding: 20px;
   box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
 }
 
@@ -497,8 +496,73 @@ header a {
   padding: 20px;
   box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
   margin-top: 50px;
+  list-style-type: none;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-footer {
+header {
+  margin-bottom: 60px;
+}
+
+header ul {
+  padding-left: 0px;
+  margin-left: 0px !important;
+}
+
+header li {
+  display: inline-block;
+}
+
+header li a {
+  text-decoration: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+header li .is-active {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+body {
+  background-color: #e2ecf5;
+}
+
+header {
+  background-color: #02699f;
+}
+
+header a {
+  color: white;
+}
+
+header li .is-active {
+  background-color: #029ce0;
+  color: white !important;
+}
+
+.block-region-main .view-content ul li {
+  background-color: white;
+  border-top: 15px solid #025279;
+}
+
+.block-region-sidebar .block-tagadelic {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.region-footer {
   background-color: #02699f;
 }
