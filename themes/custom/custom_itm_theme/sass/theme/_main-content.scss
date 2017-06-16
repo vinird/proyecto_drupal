@@ -1,9 +1,27 @@
 .block-region-main .view-content{
-    
+    a{
+        text-decoration: none;
+    }
     ul{
         li{
             background-color: white;
             border-top: 15px solid rgb(2, 82, 121);
+            .field--name-title{
+                color: $title-color
+            }
+            .node--view-mode-teaser{
+                box-sizing: border-box;
+                .node__meta{
+                    max-width: 20%;
+                    display: inline-block;
+                    color: $text;
+                }
+                .node__content{
+                    color: $text;
+                    max-width: 79%;
+                    display: inline-block;
+                }
+            }
         }
     }
 }
