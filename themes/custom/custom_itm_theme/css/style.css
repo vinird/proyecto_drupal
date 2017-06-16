@@ -488,13 +488,13 @@ template {
   margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
+  box-shadow: 0px 8px 30px -5px #bfbfbf;
 }
 
 .block-region-sidebar .block-views {
   background-color: white;
   padding: 20px;
-  box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
+  box-shadow: 0px 8px 30px -5px #bfbfbf;
   margin-top: 50px;
   list-style-type: none;
   box-sizing: border-box;
@@ -577,10 +577,48 @@ header li .is-active {
   display: inline-block;
 }
 
+.block-region-main .pager {
+  color: #66b7da;
+}
+
+.block-region-main .pager a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .block-region-main .pager {
+    background: #066c9d;
+    width: 80%;
+    margin: auto;
+    border-radius: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-region-main .pager {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 30%;
+            flex: 1 0 30%;
+    position: absolute;
+    text-align: center;
+    width: 120%;
+    margin: 0px;
+    padding: 0px;
+    left: -20%;
+    background: #066c9d;
+  }
+}
+
 .block-region-sidebar .block-tagadelic {
   background-color: white;
   padding: 20px;
-  box-shadow: 0px 12px 22px 0px rgba(91, 90, 117, 0.65);
+  box-shadow: 0px 8px 30px -5px #bfbfbf;
   box-sizing: border-box;
   margin-bottom: 50px;
   margin-left: 20px;
@@ -588,7 +626,24 @@ header li .is-active {
 }
 
 .region-footer {
-  background-color: #02699f;
+  background-color: #06547b;
+  border-top: 50px solid #066c9d;
+  min-height: 120px;
+  margin-bottom: -20px;
+  text-align: center;
+  color: white;
+}
+
+.region-footer li {
+  max-width: 80%;
+  text-align: center;
+  color: white;
+  list-style-type: none;
+  margin: auto;
+}
+
+.region-footer a {
+  display: inline-block;
 }
 
 .block-region-sidebar a {

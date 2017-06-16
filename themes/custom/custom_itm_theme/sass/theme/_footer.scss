@@ -1,3 +1,18 @@
 .region-footer{
-    background-color: rgb(2, 105, 159);
+    background-color: rgb(6, 84, 123);
+    border-top: 50px solid rgb(6, 108, 157);
+    min-height: 120px;
+    margin-bottom: -20px;
+    li{
+        max-width: 80%;
+        text-align: center;
+        color: white;
+        list-style-type: none;
+        margin: auto;
+    }
+    a{
+        display: inline-block;
+    }
+    text-align: center;
+    color: white;
 }
