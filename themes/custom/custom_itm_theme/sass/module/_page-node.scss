@@ -1,0 +1,24 @@
+.layout-content-node .block-region-main{
+    background-color: white;
+    box-shadow: 0px 15px 42px -25px rgba(117,116,117,1);
+    border-top: 15px solid aliceblue;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 3%;
+    padding-top: 2%;
+    border-radius: 6px;
+    a{
+      color: darkseagreen;
+    }
+
+    img{
+      max-width: 100%;
+      min-width: 1%;
+      margin: auto;
+      height: auto;
+      margin-bottom: 2%;
+    }
+}

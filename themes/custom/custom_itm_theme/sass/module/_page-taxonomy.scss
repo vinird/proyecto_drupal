@@ -1,0 +1,82 @@
+.layout-content-taxonomy{
+	background-color: white;
+	box-shadow: 0px 15px 42px -25px rgba(117,116,117,1);
+	max-width: $large;
+	margin: auto;
+	margin-bottom: 5%;
+	padding: 2%;
+	text-align: justify;
+	.views-element-container{
+		h2{
+			border-bottom: 2px solid aliceblue;
+		}
+	}
+	.layout-content-taxonomy .page-title{
+		color: #039be5;
+	}
+
+	.layout-content-taxonomy .item-list{
+		background-color: red;
+	}
+	.view-taxonomy-term{
+		.view-header{
+			.tag-cloud{
+				h2{
+					border-bottom: 2px solid aliceblue;
+				}
+				li , span{
+					display: inline-block;
+					background: lightskyblue;
+					color: white;
+					padding-left: 20px;
+					padding-right: 20px;
+					border-radius: 100px;
+					padding-top: 2px;
+					padding-bottom: 3px;
+					font-size: 24px;
+					margin-bottom: 10px;
+					a{
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+			.view-content{
+				li{
+					background: aliceblue;
+					list-style-type: none;
+					padding: 10px;
+					border-radius: 5px;
+					display: table;
+					width: 90%;
+				    box-sizing: border-box;
+					a{
+						text-decoration: none;
+    					margin-right: 5px;
+						color: darkseagreen;
+					}
+					span{
+						color: gray;
+					}
+				}
+			}
+		}
+		.view-content{
+			.node{
+				border: 1px solid lightskyblue;
+				padding: 3%;
+				border-radius: 5px;
+				margin-top: 20px;
+				background: white;
+				box-shadow: 0px 15px 42px -25px rgba(117,116,117,1);
+			}
+		}
+	} 
+	a{
+		text-decoration: none;
+		color: darkseagreen;
+	}
+	h1{
+		border-bottom: 2px solid lightskyblue;
+	}
+}

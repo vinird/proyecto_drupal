@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Bangers|Faster+One|Open+Sans|Plaster|Racing+Sans+One|Raleway|Roboto');
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Faster One', cursive;
+font-family: 'Plaster', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+.layout-container{
+    h1,h2,h3,h4,h5,h6,a,span {
+        // font-family: 'Bangers', cursive;
+        // font-family: 'Faster One', cursive;
+        // font-family: 'Plaster', cursive;
+        // font-family: 'Alfa Slab One', cursive;
+        font-family: 'Racing Sans One', cursive;
+        font-weight: 100;
+        // font-family: 'Raleway', sans-serif;
+        // font-family: 'Open Sans', sans-serif;
+        // font-family: 'Roboto', sans-serif;
+    }
+    p, strong {
+        // font-family: 'Bangers', cursive;
+        // font-family: 'Faster One', cursive;
+        // font-family: 'Plaster', cursive;
+        // font-family: 'Alfa Slab One', cursive;
+        // font-family: 'Racing Sans One', cursive;
+        // font-family: 'Raleway', sans-serif;
+        word-spacing: 1px;
+        // font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        color: gray;
+    }
+}

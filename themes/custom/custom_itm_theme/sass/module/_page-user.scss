@@ -1,0 +1,21 @@
+.layout-content-user{
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.72);
+  -moz-box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.72);
+  box-shadow: 0px 2px 15px -1px rgba(0,0,0,0.72);
+  max-width: $medium;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  text-align: justify;
+}
+
+.layout-content-user .page-title{
+  color: #039be5;
+}
+
+.layout-content-user img{
+  width: 60%;
+  margin: 2%;
+  height: auto;
+}

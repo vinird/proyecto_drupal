@@ -1,0 +1,18 @@
+.layout-content-user{
+  @media screen and (max-width: $medium)  {
+      flex: 1 0 100%;
+  }
+  @media screen and (min-width: $medium)  {
+     flex: 1 0 70%;
+  }
+}
+
+.layout-content-user .page-title{
+  color: #039be5;
+}
+
+.layout-content-user img{
+  width: 60%;
+  margin: 2%;
+  height: auto;
+}

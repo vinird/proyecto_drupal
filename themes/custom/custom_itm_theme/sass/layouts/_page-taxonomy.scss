@@ -1,0 +1,42 @@
+.layout-content-taxonomy{
+	.view-taxonomy-term{
+		display: flex;
+		flex-wrap: wrap;
+		.view-header{
+			padding: 2%;
+   			box-sizing: border-box;
+			@media screen and (max-width: $medium)  {
+			flex: 1 0 100%;
+			}
+			@media screen and (min-width: $medium)  {
+			flex: 1 0 30%;
+			}
+			.layout-region--middle{
+				display: none;
+				flex: 1 0 100%;
+			}
+			.layout-region{
+				flex: 1 0 100%;
+			}
+		}
+		.view-content{
+			padding: 2%;
+    		box-sizing: border-box;
+			@media screen and (max-width: $medium)  {
+			flex: 1 0 100%;
+			}
+			@media screen and (min-width: $medium)  {
+			flex: 1 0 30%;
+			}
+		}
+		.pager{
+			flex: 1 0 100%;
+		}
+		.feed-icons{
+			flex: 1 0 100%;
+			a{
+				float: right;
+			}
+		}
+	} 
+}
