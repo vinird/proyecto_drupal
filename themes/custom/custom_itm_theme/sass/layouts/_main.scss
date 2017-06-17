@@ -1,6 +1,7 @@
 .main-custom-class{
     max-width: $max-width;
     margin: auto;
+    box-sizing: border-box;
     @media screen and (min-width: $medium)  {
         display: flex;
     }
@@ -9,7 +10,7 @@
             flex: 1 0 100%;
         }
         @media screen and (min-width: $medium)  {
-           flex: 1 0 70%;            
+           flex: 1 0 64%;            
         }
 
     }

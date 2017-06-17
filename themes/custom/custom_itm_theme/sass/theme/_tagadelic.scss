@@ -1,13 +1,27 @@
 .block-region-sidebar .block-tagadelic{
     background-color: white;
     padding: 20px;
-    -webkit-box-shadow: 0px 8px 30px -5px rgba(191,191,191,1);
-    -moz-box-shadow: 0px 8px 30px -5px rgba(191,191,191,1);
-    box-shadow: 0px 8px 30px -5px rgba(191,191,191,1);
-
+    // box-shadow:0px 15px 42px -25px rgba(117,116,117,1);
     box-sizing: border-box;
     // border-top: 15px solid rgb(2, 82, 121);
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    .tag-cloud{
+        li , span{
+            display: inline-block;
+            background: lightskyblue;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 100px;
+            padding-top: 2px;
+            padding-bottom: 3px;
+            font-size: 24px;
+            margin-bottom: 10px;
+            a{
+                color: white;
+            }
+        }
+    }
 }
