@@ -1,3 +1,3 @@
 ## Ubicación del archivo post.csv para la migración 
 
-	sites/default/files/csv
+	sites/default/files/csv/
