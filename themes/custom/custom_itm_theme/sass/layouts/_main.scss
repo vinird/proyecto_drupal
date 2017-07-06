@@ -4,6 +4,16 @@
     box-sizing: border-box;
     @media screen and (min-width: $medium)  {
         display: flex;
+        flex-wrap: wrap;
+    }
+    .block-region-header{
+        flex: 1 0 100%;
+        img{
+            max-height: 400px;
+        }
+        span{
+            display: none;
+        }
     }
     .block-region-main{
         @media screen and (max-width: $medium)  {

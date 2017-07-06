@@ -77,3 +77,19 @@
     }
 
 }
+.text-formatted {
+    word-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    line-height: 1.50;
+    color: gray;
+    text-align: justify;
+    padding: 4%;
+}
+p {
+    line-height: 1.50;
+}
+.field--name-title {
+    padding: 1%;
+    margin: 1%;
+    display: block;
+}

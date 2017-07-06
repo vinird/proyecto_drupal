@@ -1,0 +1,53 @@
+uuid: 00e8e1b4-4d71-46c3-9d49-bbaa8adb951f
+langcode: en
+status: true
+dependencies: {  }
+id: posts
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: default
+label: posts
+source:
+  plugin: csv
+  path: sites/default/files/csv/posts.csv
+  header_row_count: 1
+  keys:
+    - nid
+  delimiter: ','
+  enclosure: '"'
+  column_names:
+    -
+      nid: 'Post nid'
+    -
+      created: Created
+    -
+      title: 'Post title'
+    -
+      body: 'Post body'
+    -
+      track: Track
+process:
+  type:
+    plugin: default_value
+    default_value: blog_post
+  created:
+    plugin: callback
+    source: created
+    callable: strtotime
+  title: title
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: full_html
+  field_blog_tags:
+    plugin: entity_generate
+    source: track
+    ignore_case: true
+    entity_type: taxonomy_term
+    bundle: tags
+    bundle_key: vid
+    value_key: name
+destination:
+  plugin: 'entity:node'

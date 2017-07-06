@@ -448,7 +448,23 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
+}
+
+.main-custom-class .block-region-header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+}
+
+.main-custom-class .block-region-header img {
+  max-height: 400px;
+}
+
+.main-custom-class .block-region-header span {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -619,31 +635,71 @@ template {
   margin-right: 20px;
 }
 
-header {
-  margin-bottom: 60px;
+@media screen and (max-width: 768px) {
+  header #block-custom-itm-theme-branding {
+    display: block;
+  }
 }
 
-header ul {
+@media screen and (max-width: 768px) {
+  header #block-custom-itm-theme-branding a {
+    display: block;
+  }
+}
+
+header #block-custom-itm-theme-branding img {
+  vertical-align: sub;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  header #block-custom-itm-theme-branding img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: block !important;
+  }
+}
+
+header nav ul {
   padding-left: 0px;
   margin-left: 0px !important;
 }
 
-header li {
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: block;
+  }
+}
+
+header nav li {
   display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
-  header li a {
+  header nav li {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav li a {
+    display: block;
     padding: 2px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 100px;
     text-decoration: none;
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  header li a {
+  header nav li a {
     text-decoration: none;
     padding-left: 12px;
     padding-right: 12px;
@@ -653,11 +709,23 @@ header li {
 }
 
 @media screen and (min-width: 768px) {
-  header li .is-active {
+  header nav li .is-active {
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 30px;
   }
 }
 
@@ -897,6 +965,25 @@ header li .is-active {
     left: -20%;
     background: #066c9d;
   }
+}
+
+.text-formatted {
+  word-spacing: 1px;
+  font-family: 'Roboto',sans-serif;
+  line-height: 1.50;
+  color: gray;
+  text-align: justify;
+  padding: 4%;
+}
+
+p {
+  line-height: 1.50;
+}
+
+.field--name-title {
+  padding: 1%;
+  margin: 1%;
+  display: block;
 }
 
 .block-region-sidebar .block-tagadelic {
